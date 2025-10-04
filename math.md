@@ -4,6 +4,7 @@
     function TotalWithTax(Price, Quantity, TaxRate) {
         SubTotal := Price * Quantity
         Tax := SubTotal * TaxRate
-        SubTotal + Tax
+        Total := SubTotal + Tax
+        Round(Total * 100) / 100 
     }
 
